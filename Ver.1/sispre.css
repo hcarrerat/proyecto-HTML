@@ -1,0 +1,58 @@
+
+            html{
+                margin: 0px;
+            }
+            #contenedor{
+                width: 20%;
+                height: 40%;
+                min-width: 10%;
+                background-color: #c4c4c4;
+                padding: 1em;
+                border: .01rem solid #aaaaaa;
+                border-radius: 2%;
+                position:relative;
+                left: 25%;
+                text-align: center;
+                }
+            body{
+                background-color: rgba(214, 213, 213, 0.89);
+            }
+            .cajaslog {
+                border-bottom-style: dashed;
+                width: 200px;
+                height: 40px;
+                border: 0px;
+                border-radius: 5px;
+                padding-left: 15px;
+                font-size: 18px; 
+            }
+            .titulos{
+                text-align: center;
+                font-family: cursive;
+            }
+            input[type=submit] {
+                border: none;
+                padding: 1em;
+                background-color: #2f4979;
+                border-radius: 10px;
+                font-weight: 800;
+                color: whitesmoke;
+               }
+            header{
+                background-color: #2f4979;
+                color: whitesmoke;
+                margin: 0px;
+                padding: 1px;                                  
+                }
+            .foot{
+                background-color: #2f4979;
+                color: whitesmoke;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                width: 100%;
+                height: 5%;
+                bottom: 0;
+                line-height: 5%;
+                text-align: center;    
+            }

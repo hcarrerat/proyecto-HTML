@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+           <link href="reset.css" rel="stylesheet" type="text/css" />
+            <title>SIPRE</title>
+            <link href="sispre.css" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+        </head>
+        <body>
+<!-- ENCABEZADO Y NAVBAR-->
+            <header class="headercont">
+                <h1 class="cbdmq">Cuerpo de Bomberos de Quito</h1>
+                <nav class="barranavegable">
+                      <ul>
+                        <li><a href=""></a>Equipo Estructural</li>
+                        <li><a href=""></a>Equipo Táctico</li>
+                        <li><a href=""></a>Equipo Forestal</li>
+                      </ul>
+                 </nav>
+            </header>
+<!--FORMULARIO -->
+            <div class="contenedorform">
+                <form action="#">
+<!-- CAMPOS REFERENTES AL CASCO -->                                             <fieldset>
+                            <legend align="left"><b>CASCO</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for="si_tiene_casco"><input id="si_tiene_casco" type='radio' name='tiene_casco' value='SI' checked />Si</input></label>
+                                <label for="no_tiene_casco"><input id="no_tiene_casco" type='radio' name='tiene_casco' value='NO'/>No</input></label>
+                                <br><br>
+                                <label for="casco">Modelo:</label>
+                                <select id="casco" name="casco">
+                                <option  value="gallet F1" selected>Gallet F1</option> 
+                                <option  value="bullard magma">Bullard Magma</option>
+                                <option  value="MSA Cairns">MSA Cairns</option>
+                                <option  value="otro">Otro</option>
+                                </select>
+                                <br><br>
+                                <label for="estado_casco">Estado:</label>
+                                <select id="estado_casco" name="estado_casco">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <br>
+                                <label>Cambio:</label> 
+                                <label for="recomienda_si_casco"><input type="radio" id="recomienda_si_casco" name="cambio_casco" value="si">Si</label>
+                                <label for="recomienda_no_casco"><input type="radio" id="recomienda_no_casco" name="cambio_casco" value="no" checked>No</label>
+                                
+                            </div>
+                            <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                            </div>
+                         </fieldset>
+<!-- CAMPOS REFERENTES AL CHAQUETON -->
+                        <fieldset>
+                        <legend align="left"><b>CHAQUETON</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for:"Si_tiene_chaqueton"><input id="si_tiene_chaqueton" type='radio' name='tiene_chaqueton' value='SI' checked />Si</input></label>
+                                <label for:"no_tiene_chaqueton"><input id="no_tiene_chaqueton" type='radio' name='tiene_chaqueton' value='NO'/>No</input></label>
+                                 <br><br>
+                                <label for="ext_chaqueton">Exterior:</label>
+                                <select id="ext_chaqueton" name="ext_chaqueton">
+                                <option  value="bueno" selected>Bueno</option> 
+                                <option  value="malo">Malo</option>
+                                <option  value="regular">Regular</option>
+                                </select>
+                                <br>
+                                <label>Daños:</label>
+                                    <label for="daños_ext_chaqueton_calor"><input id="daños_ext_chaqueton_calor" type="checkbox" name="daños_chaqueton_ext" value="calor">Calor</input></label>
+                                    <label for="daños_ext_chaqueton_cortes"><input id="daños_ext_chaqueton_cortes" type="checkbox" name="daños_chaqueton_ext" value="cortes">Cortes</input></label>
+                                    <label for="daños_ext_chaqueton_uso"><input id= "daños_ext_chaqueton_uso" type="checkbox" name="daños_chaqueton_ext" value="uso">Uso</label>
+                                <br>
+                                <label for="int_chaqueton">Interior:</label>
+                                <select id="int_chaqueton" name="int_chaqueton">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <br>
+                                <label>Daños:</label>
+                                <label for="daños_int_chaqueton_calor"><input id="daños_int_chaqueton_calor" type="checkbox" name="daños_chaqueton_int" value="calor">Calor</input></label>
+                                <label for="daños_int_chaqueton_cortes"><input id="daños_int_chaqueton_cortes" type="checkbox" name="daños_chaqueton_int" value="cortes">Cortes</input></label>
+                                <label for="daños_int_chaqueton_uso"><input id= "daños_int_chaqueton_uso" type="checkbox" name="daños_chaqueton_int" value="uso">Uso</label>
+                                <br>               <label>Cambio</label>
+                                <label for="recomienda_si_chaqueton"><input type="radio" id="recomienda_si_chaqueton" name="cambio_chaqueton" value="si">Si</label>
+                                <label for="recomienda_no_chaqueton"><input type="radio" id="recomienda_no_chaqueton" name="cambio_chaqueton" value="no" checked>No</label>
+                            </div>
+                           <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                           </div>
+                    </fieldset>
+<!-- CAMPOS REFERENTES AL PANTALON -->
+                        <fieldset>
+                        <legend align="left"><b>PANTALON</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for="si_tiene_pantalon"><input id="si_tiene_pantalon" type='radio' name='tiene_pantalon' value='SI' checked/>Si</input></label>
+                                <label for="no_tiene_pantalon"><input id="no_tiene_pantalon" type='radio' name='tiene_pantalon' value='NO'/>No</input></label>
+                                 <br><br>
+                                <label for="ext_pantalon">Exterior:</label>
+                                <select id="ext_pantalon" name="ext_pantalon">
+                                <option  value="bueno" selected>Bueno</option> 
+                                <option  value="malo">Malo</option>
+                                <option  value="regular">Regular</option>
+                                </select>
+                                <br>
+                                <label>Daños:</label>
+                                    <label for="daños_ext_pantalon_calor"><input id="daños_ext_pantalon_calor" type="checkbox" name="daños_pantalon_ext" value="calor">Calor</input></label>
+                                    <label for="daños_ext_pantalon_cortes"><input id="daños_ext_pantalon_cortes" type="checkbox" name="daños_pantalon_ext" value="cortes">Cortes</input></label>
+                                    <label for="daños_ext_pantalon_uso"><input id= "daños_ext_pantalon_uso" type="checkbox" name="daños_pantalon_ext" value="uso">Uso</label>
+                                <br><br>
+                                <label for="int_pantalon">Interior:</label>
+                                <select id="int_pantalon" name="int_pantalon">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <br>
+                                <label>Daños:</label>
+                                <label for="daños_int_pantalon_calor"><input id="daños_int_pantalon_calor" type="checkbox" name="daños_pantalon_int" value="calor">Calor</input></label>
+                                <label for="daños_int_pantalon_cortes"><input id="daños_int_pantalon_cortes" type="checkbox" name="daños_pantalon_int" value="cortes">Cortes</input></label>
+                                <label for="daños_int_pantalon_uso"><input id= "daños_int_pantalon_uso" type="checkbox" name="daños_pantalon_int" value="uso">Uso</label>
+                                <br>
+                                <label>Cambio</label>
+                                <label for="recomienda_si_pantalon"><input type="radio" id="recomienda_si_pantalon" name="cambio_pantalon" value="si">Si</label>
+                                <label for="recomienda_no_pantalon"><input type="radio" id="recomienda_no_pantalon" name="cambio_pantalon" value="no" checked>No</label>
+                            </div>
+                           <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                           </div>
+                    </fieldset>
+<!-- CAMPOS REFERENTES A LAS BOTAS -->
+                        <fieldset>
+                            <legend align="left"><b>BOTAS</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for="si_tiene_botas"><input id="si_tiene_botas" type='radio' name='tiene_botas' value='SI' checked />Si</input></label>
+                                <label for="no_tiene_botas"><input id="no_tiene_botas" type='radio' name='tiene_botas' value='NO'/>No</input></label>
+                                <br><br>
+                                <label for="botas">Modelo:</label>
+                                <select id="botas" name="botas">
+                                <option  value="Zeis" selected>Zeis</option> 
+                                <option  value="Dragon Fire">Dragon Fire</option>
+                                <option  value="Lion Apparel">Lion Apparel</option>
+                                <option  value="otro">Otro</option>
+                                </select>
+                                <br><br>
+                                <label for="estado_botas">Estado:</label>
+                                <select id="estado_botas" name="estado_botas">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <label>Cambio:</label> 
+                                <label for="recomienda_si_botas"><input type="radio" id="recomienda_si_botas" name="cambio_botas" value="si">Si</label>
+                                <label for="recomienda_no_botas"><input type="radio" id="recomienda_no_botas" name="cambio_botas" value="no" checked>No</label>
+                                
+                            </div>
+                            <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                            </div>
+                         </fieldset>
+<!-- CAMPOS REFERENTES A LOS GUANTES -->
+                        <fieldset>
+                            <legend align="left"><b>GUANTES</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for="si_tiene_guantes"><input id="si_tiene_guantes" type='radio' name='tiene_guantes' value='SI' checked />Si</input></label>
+                                <label for="no_tiene_guantes"><input id="no_tiene_guantes" type='radio' name='tiene_guantes' value='NO'/>No</input></label>
+                                <br><br>
+                                <label for="guantes">Modelo:</label>
+                                <select id="guantes" name="guantes">
+                                <option  value="Zeis" selected>Zeis</option> 
+                                <option  value="Dragon Fire">Dragon Fire</option>
+                                <option  value="Lion Apparel">Lion Apparel</option>
+                                <option  value="otro">Otro</option>
+                                </select>
+                                <br><br>
+                                <label for="estado_guantes">Estado:</label>
+                                <select id="estado_guantes" name="estado_guantes">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <label>Cambio:</label> 
+                                <label for="recomienda_si_guantes"><input type="radio" id="recomienda_si_guantes" name="cambio_guantes" value="si">Si</label>
+                                <label for="recomienda_no_guantes"><input type="radio" id="recomienda_no_guantes" name="cambio_guantes" value="no" checked>No</label>
+                                
+                            </div>
+                            <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                            </div>
+                         </fieldset>
+<!-- CAMPOS REFERENTES Al HOOD -->
+                        <fieldset>
+                            <legend align="left"><b>HOOD</b></legend>
+                            <div class="datos">
+                                <label>Posee:</label>
+                                <label for="si_tiene_hood"><input id="si_tiene_hood" type='radio' name='tiene_hood' value='SI' checked />Si</input></label>
+                                <label for="no_tiene_hood"><input id="no_tiene_hood" type='radio' name='tiene_hood' value='NO'/>No</input></label>
+                                <br><br>
+                                <label for="hood">Color:</label>
+                                <select id="hood" name="hood">
+                                <option  value="Negro" selected>Negro</option> 
+                                <option  value="Blanco">Blanco</option>
+                                <option  value="Crema">Crema</option>
+                                <option  value="otro">Otro</option>
+                                </select>
+                                <br><br>
+                                <label for="estado_hood">Estado:</label>
+                                <select id="estado_hood" name="estado_hood">
+                                    <option value="bueno" selected >Bueno</option>
+                                    <option value="malo">Malo</option>
+                                    <option value="regular">Regular</option>
+                                </select>
+                                <label>Cambio:</label> 
+                                <label for="recomienda_si_hood"><input type="radio" id="recomienda_si_hood" name="cambio_hood" value="si">Si</label>
+                                <label for="recomienda_no_hood"><input type="radio" id="recomienda_no_hood" name="cambio_hood" value="no" checked>No</label>
+                                
+                            </div>
+                            <div class="observaciones"> 
+                               <label for="observaciones">Observaciones:</label><br>
+                               <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                            </div>
+                         </fieldset>
+                </form>
+            </div>
+<!--FINAL DEL FORMULARIO-->
+            </body>
+
+    </html>
