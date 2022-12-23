@@ -92,3 +92,9 @@ fieldset{
     background-color: #edf2ff;
     border-radius: 2rem;
 }
+.datos{
+    border-width: thin;
+    order-color: yellow;
+    border-left: #4480A3;
+
+}
