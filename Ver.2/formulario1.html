@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <link href="reset.css" rel="stylesheet" type="text/css" />
     <title>SIPRE</title>
-    <link href="sispre.css" rel="stylesheet" type="text/css" />
+    <!--<link href="sispre.css" rel="stylesheet" type="text/css" />-->
     <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
 </head>
     <body>
@@ -21,7 +21,8 @@
 <!--FORMULARIO -->
             <main>
                 <div class="contenedorform">
-                    <form action="#"> <!-- CAMPOS REFERENTES AL CASCO -->
+                    <form action="#"> 
+<!-- CAMPOS REFERENTES AL CASCO -->
                         <fieldset>
                             <legend>CASCO</legend>
                                 <div class="datos">
@@ -50,21 +51,21 @@
                                     <label>Cambio:</label>
                                     <label for="recomienda_si_casco"><input type="radio" id="recomienda_si_casco" name="cambio_casco" value="si">Si</label>
                                     <label for="recomienda_no_casco"><input type="radio" id="recomienda_no_casco" name="cambio_casco" value="no" checked>No</label>
-                
                                 </div>
                                 <div class="observaciones">
-                                   <label for="observaciones">Observaciones:</label><br>
-                                   <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                                    <label for="observaciones">Observaciones:</label>
+                                    <br>
+                                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
                                 </div>
-                             </fieldset>
-                <!-- CAMPOS REFERENTES AL CHAQUETON -->
-                            <fieldset>
-                            <legend align="bottom"><b>CHAQUETON</b></legend>
+                        </fieldset>
+<!-- CAMPOS REFERENTES AL CHAQUETON -->
+                        <fieldset>
+                            <legend><b>CHAQUETON</b></legend>
                                 <div class="datos">
                                     <label>Posee:</label>
                                     <label for:"Si_tiene_chaqueton"><input id="si_tiene_chaqueton" type='radio' name='tiene_chaqueton' value='SI' checked />Si</input></label>
                                     <label for:"no_tiene_chaqueton"><input id="no_tiene_chaqueton" type='radio' name='tiene_chaqueton' value='NO'/>No</input></label>
-                                     <br><br>
+                                    <br><br>
                                     <label for="ext_chaqueton">Exterior:</label>
                                     <select id="ext_chaqueton" name="ext_chaqueton">
                                     <option  value="bueno" selected>Bueno</option>
@@ -92,13 +93,13 @@
                                     <label for="recomienda_si_chaqueton"><input type="radio" id="recomienda_si_chaqueton" name="cambio_chaqueton" value="si">Si</label>
                                     <label for="recomienda_no_chaqueton"><input type="radio" id="recomienda_no_chaqueton" name="cambio_chaqueton" value="no" checked>No</label>
                                 </div>
-                               <div class="observaciones">
-                                   <label for="observaciones">Observaciones:</label><br>
-                                   <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
-                               </div>
+                            <div class="observaciones">
+                                <label for="observaciones">Observaciones:</label><br>
+                                <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
+                            </div>
                         </fieldset>
-                <!-- CAMPOS REFERENTES AL PANTALON -->
-                            <fieldset>
+<!-- CAMPOS REFERENTES AL PANTALON -->
+                        <fieldset>
                             <legend align="left"><b>PANTALON</b></legend>
                                 <div class="datos">
                                     <label>Posee:</label>
@@ -138,8 +139,8 @@
                                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
                                </div>
                         </fieldset>
-                <!-- CAMPOS REFERENTES A LAS BOTAS -->
-                            <fieldset>
+<!-- CAMPOS REFERENTES A LAS BOTAS -->
+                        <fieldset>
                                 <legend align="left"><b>BOTAS</b></legend>
                                 <div class="datos">
                                     <label>Posee:</label>
@@ -169,9 +170,9 @@
                                    <label for="observaciones">Observaciones:</label><br>
                                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
                                 </div>
-                             </fieldset>
-                <!-- CAMPOS REFERENTES A LOS GUANTES -->
-                            <fieldset>
+                        </fieldset>
+<!-- CAMPOS REFERENTES A LOS GUANTES -->
+                        <fieldset>
                                 <legend align="left"><b>GUANTES</b></legend>
                                 <div class="datos">
                                     <label>Posee:</label>
@@ -201,9 +202,9 @@
                                    <label for="observaciones">Observaciones:</label><br>
                                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
                                 </div>
-                             </fieldset>
-                <!-- CAMPOS REFERENTES Al HOOD -->
-                            <fieldset>
+                        </fieldset>
+<!-- CAMPOS REFERENTES Al HOOD -->
+                        <fieldset>
                                 <legend align="left"><b>HOOD</b></legend>
                                 <div class="datos">
                                     <label>Posee:</label>
@@ -233,7 +234,7 @@
                                    <label for="observaciones">Observaciones:</label><br>
                                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" placeholder="Observaciones relacionadas a las novedades halladas"></textarea>
                                 </div>
-                             </fieldset>
+                        </fieldset>
                     </form>
                 </div>
                 <!--FINAL DEL FORMULARIO-->
